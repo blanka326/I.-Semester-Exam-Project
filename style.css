@@ -1,0 +1,202 @@
+/* overall body settings */
+
+body {
+    width: 100%;
+    background-image: url(images/bigiphonebackground.png);
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-image: url("images/bigdesktopbackground.png");
+    }
+}
+
+p {
+    color: white;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+/* HEADERS */
+
+/* WELCOME PAGE header */
+
+#header {
+    height: 10rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 79;
+}
+
+#header>h1 {
+    /* I am using the id name and '>h1' to make sure
+    not every h1 gets this styling just the one in this id */
+    color: white;
+    font-family: Kulim Park;
+    font-size: 24px;
+    font-weight: regular;
+    margin-top: 79px;
+}
+
+#header>a>h1 {
+    color: white;
+    font-family: Kulim Park;
+    font-size: 24px;
+    font-weight: regular;
+    margin-top: 79px;
+}
+
+
+
+/* WELCOME PAGE - welcome part*/
+
+#welcome {
+    width: 100%;
+    text-align: center;
+}
+
+#welcome>.full-height {
+    height: 100vh;
+}
+
+#welcome>.vcenter>h2 {
+    color: white;
+    font-family: Lato;
+    font-size: 71px;
+    padding-top: 1vh;
+    margin-bottom: 60px;
+}
+
+#welcome>.vcenter>h3 {
+    color: white;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-left: 41px;
+    margin-right: 41px;
+}
+
+#welcome>h3 {
+    color: white;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-left: 41px;
+    margin-right: 41px;
+}
+
+/* WELCOME PAGE - choose a playlist part */
+
+
+#choosePlaylist>h2 {
+    color: white;
+    font-family: Kulim Park;
+    font-size: 41px;
+    font-weight: bold;
+}
+
+
+/* item box */
+.playlistItem {
+    width: 100%;
+    height: 98px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 13px;
+    backdrop-filter: blur(32px);
+    /* here I tried to find an equivalent to Adobe XD's 'Background Blur' feature*/
+    background-color: rgba(40, 33, 28, 0.5);
+    border-radius: 15px;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 600px) {
+    .playlistItem {
+        width: 60%;
+    }
+}
+
+.playlistItem>img {
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.textInPlaylistItems {
+    display:flex;
+    flex-direction: column;
+}
+
+/* item headline */
+.textInPlaylistItems>h3 {
+    color: white;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    text-align: left;
+}
+
+/* item description */
+.textInPlaylistItems>p {
+    color: white;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: left;
+}
+
+/* PLAYLIST PAGE - introduction part */
+
+#introduction div>img {
+    width: 50%;
+    border-radius: 28px;
+}
+
+@media screen and (min-width: 600px) {
+    #introduction div>img {
+        width: 25%;
+    }
+}
+
+
+#introduction>h2 {
+    color: white;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#introduction div>p {
+    color: white;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+/* PLAYLIST PAGE - songs part */
+
+/* here I wanted the have a smaller window for a bigger content that needs scrolling */
+#chooseSong {
+    height:100px;
+    position: relative;
+    height: 350px;
+    width: 60%;
+    overflow: scroll;
+    overflow-x:hidden; /* this way I hid the horizontal scrollbar */
+}
+
+/* for the songs see .playlistItem above (from line 89)
+because the styling is the same */

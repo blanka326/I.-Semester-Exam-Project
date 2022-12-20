@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="This is a page about...(short)">
+    <title>AarhusMusicCity</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <div id="header">
+        <h1>AarhusMusicCity.dk</h1>
+    </div>
+
+    <!-- welcome part-->
+
+    <div id="welcome">
+
+        <!--here full-height makes the div the size of the screen -->
+        <!--and vcenter refers to 'vertically centered'-->
+        <div class="full-height vcenter"> 
+            <h2 class="vcenter">Welcome!</h2> 
+            <h3 class="half-height vcenter">Do you know what's common in music and hidden places?</h3>
+        </div>
+        <!-- these two are in a separate div together because they are
+        more closely connected, the spacing is smaller between them -->
+
+        <!-- the rest are just headings -->
+            <h3 class="full-height vcenter">That there is always more to explore.</h3>
+            <h3 class="full-height vcenter">Here are 3 alternative playlists for you to do both, with all the necessary
+            information hidden in their songs.</h3>
+            <h3 class="full-height vcenter">Enjoy!</h3>
+    </div>
+
+    <!-- choose a playlist part -->
+
+    <div id="choosePlaylist">
+    
+        <h2 class="full-height vcenter">Choose a Playlist</h2>
+
+        
+        <!-- the first playlist is an actual link :) -->
+        <a href="playlistpage.html" style="text-decoration:none;"><div class="playlistItem">
+            <img src="images/playlistcovercafestoej.JPG" alt="small playlist cover image">
+            <div class="textInPlaylistItems"><h3>*Oh Those Lovely Friday Evenings</h3>
+            <p>Meet Café Støj, a place to enjoy live music
+                while having a delicious meal.</p></div>
+        </div></a>
+
+        <!-- the other two playlist are not links yet :( -->
+        <div class="playlistItem">
+            <img src="images/playlistcoverradar.png" alt="small playlist cover image">
+            <div class="textInPlaylistItems"><h3>Unknown Artists Are The Best</h3>
+            <p>At Radar, a small music venue, you can see
+                the stars of tomorrow throwing amazing concerts.</p></div>
+        </div>
+        <div class="playlistItem">
+            <img src="images/playlistcoverbadstuerock.JPG" alt="small playlist cover image">
+            <div class="textInPlaylistItems"><h3>I Just Got A Vinyl Record Player</h3>
+            <p>Find all your favourite albums at BadStue Rock,
+            and much more!</p></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
